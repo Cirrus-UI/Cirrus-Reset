@@ -1,3 +1,25 @@
-body {
-  margin: 0;
-  background-color: #0066ff; }
+/*
+* Cirrus Reset 0.0.1
+* Stanley Lim, Copyright 2017
+* https://spiderpig86.github.io/Cirrus-Reset
+*/
+/* BASE FILE FOR CSS RESET */
+/* Reset browser preset margins, paddings, borders, and fonts */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Remove default background repeats */
+*,
+::before,
+::after {
+  background-repeat: none; }
+
+html {
+  line-height: 1.15;
+  /* Extra space */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box; }
+
+/* BROWSER SPECIFIC FIXES */
