@@ -1,0 +1,29 @@
+/* BASE FILE FOR CSS RESET */
+
+@mixin text-adjustments() {
+    line-height: 1.15; /* Extra space */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+@mixin reset-spacing() {
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset browser preset margins, paddings, borders, and fonts */
+* {
+    @include reset-spacing();
+}
+
+/* Remove default background repeats */
+*,
+::before,
+::after {
+    background-repeat: none;
+}
+
+html {
+    @include text-adjustments();
+    box-sizing: border-box;
+}
