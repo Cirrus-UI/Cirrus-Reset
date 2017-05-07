@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var prop = require('./package.json');
+var minify = require('gulp-minify-css');
 var $ = require('gulp-load-plugins')();
 var head = '\/*\r\n* Cirrus Reset ' + prop.version + '\r\n* Stanley Lim, Copyright 2017\r\n* https://spiderpig86.github.io/Cirrus-Reset\r\n*/\r\n';
 
@@ -19,4 +20,13 @@ gulp.task('sass', () => {
 
 gulp.task('sass:watch', () => {
     gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
+gulp.task('minify', ['sass'], () => {
+    return gulp.src(['./dist/reset.css'])
+        .pipe(minify())
+        .pipe($.header(head))
+        .pipe($.size())
+        .pipe($.concat('reset.min.css'))
+        .pipe(gulp.dest('./dist/'));
 });

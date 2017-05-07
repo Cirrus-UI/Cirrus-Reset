@@ -22,6 +22,7 @@ $code_font: 'monospace', monospace; /* You can change this to Courier if you wis
 ::before,
 ::after {
     background-repeat: none;
+    box-sizing: inherit;
 }
 
 html {
@@ -55,4 +56,32 @@ code,
 kbd,
 samp {
     font-family: $code_font;
+}
+
+/* Set sizes for media content */
+img,
+video,
+audio,
+embed,
+iframe,
+object {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Remove ugly iframe border */
+iframe {
+    border: 0;
+}
+
+/* Remove space between table elements */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Align table heading and details to left */
+th, td {
+    padding: 0;
+    text-align: left;
 }

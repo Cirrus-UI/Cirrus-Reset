@@ -1,1 +1,21 @@
 /* BROWSER SPECIFIC FIXES */
+
+/* Vars */
+$selection_blue: #0066ff;
+$selection_color: #fff;
+
+/* Selection place holder */
+%default_selection {
+    background-color: $selection_blue;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* Remove the browser drop shadow when highlighting text in browsers. */
+::-moz-selection {
+    @extend %default_selection;
+}
+
+::selection {
+    @extend %default_selection;
+}
