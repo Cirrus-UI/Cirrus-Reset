@@ -1,4 +1,5 @@
 /* BASE FILE FOR CSS RESET */
+$code_font: 'monospace', monospace; /* You can change this to Courier if you wish */
 
 @mixin text-adjustments() {
     line-height: 1.15; /* Extra space */
@@ -26,4 +27,32 @@
 html {
     @include text-adjustments();
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    padding: .6rem 0; /* Add more padding top and bottom */
+    margin: 0 1rem; /* Horizontal margins */
+}
+
+/* Hide bullets */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove underline */
+a {
+    text-decoration: none;
+}
+
+/* Less distracting way to show that link is hovered */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Change font for code and related elements */
+code,
+kbd,
+samp {
+    font-family: $code_font;
 }

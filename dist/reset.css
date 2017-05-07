@@ -4,6 +4,7 @@
 * https://spiderpig86.github.io/Cirrus-Reset
 */
 /* BASE FILE FOR CSS RESET */
+/* You can change this to Courier if you wish */
 /* Reset browser preset margins, paddings, borders, and fonts */
 * {
   padding: 0;
@@ -21,5 +22,30 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  padding: .6rem 0;
+  /* Add more padding top and bottom */
+  margin: 0 1rem;
+  /* Horizontal margins */ }
+
+/* Hide bullets */
+ul, ol {
+  list-style: none; }
+
+/* Remove underline */
+a {
+  text-decoration: none; }
+
+/* Less distracting way to show that link is hovered */
+a:hover {
+  text-decoration: underline; }
+
+/* Change font for code and related elements */
+code,
+kbd,
+samp {
+  font-family: "monospace", monospace; }
 
 /* BROWSER SPECIFIC FIXES */
