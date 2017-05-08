@@ -30,3 +30,6 @@ or download the source.
 * Firefox/ESR
 * Safari (6+)
 * Internet Explorer (8+)
+
+## License
+This software is licensed under the [MIT License](https://github.com/Spiderpig86/Cirrus-Reset/blob/master/LICENSE)
