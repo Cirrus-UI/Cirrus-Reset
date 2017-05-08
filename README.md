@@ -22,3 +22,11 @@ or download the source.
 8. Fixed table element spacing with `padding: 0` and `text-align: left`.
 9. Remove horizontal resize for `textarea`.
 10. Reset button cursors to default.
+
+## Browser Support
+* Chrome
+* Opera
+* Edge (13+)
+* Firefox/ESR
+* Safari (6+)
+* Internet Explorer (8+)
