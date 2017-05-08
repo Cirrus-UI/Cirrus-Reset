@@ -1,5 +1,5 @@
 /* BASE FILE FOR CSS RESET */
-$code_font: 'monospace', monospace; /* You can change this to Courier if you wish */
+$code_font: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; /* You can change this to other fonts if you wish */
 
 @mixin text-adjustments() {
     line-height: 1.15; /* Extra space */
@@ -22,7 +22,6 @@ $code_font: 'monospace', monospace; /* You can change this to Courier if you wis
 ::before,
 ::after {
     background-repeat: none;
-    box-sizing: inherit;
 }
 
 html {
@@ -84,4 +83,18 @@ table {
 th, td {
     padding: 0;
     text-align: left;
+}
+
+/* Reset button cursor */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+    cursor: default;
+}
+
+/* Remove hand cursor in disabled elements */
+[disabled] {
+    cursor: default;
 }

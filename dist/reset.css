@@ -1,10 +1,10 @@
 /*
-* Cirrus Reset 0.0.1
+* Cirrus Reset 0.0.5
 * Stanley Lim, Copyright 2017
 * https://spiderpig86.github.io/Cirrus-Reset
 */
 /* BASE FILE FOR CSS RESET */
-/* You can change this to Courier if you wish */
+/* You can change this to other fonts if you wish */
 /* Reset browser preset margins, paddings, borders, and fonts */
 * {
   padding: 0;
@@ -14,8 +14,7 @@
 *,
 ::before,
 ::after {
-  background-repeat: none;
-  box-sizing: inherit; }
+  background-repeat: none; }
 
 html {
   line-height: 1.15;
@@ -47,7 +46,7 @@ a:hover {
 code,
 kbd,
 samp {
-  font-family: "monospace", monospace; }
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; }
 
 /* Set sizes for media content */
 img,
@@ -73,6 +72,18 @@ th, td {
   padding: 0;
   text-align: left; }
 
+/* Reset button cursor */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+  cursor: default; }
+
+/* Remove hand cursor in disabled elements */
+[disabled] {
+  cursor: default; }
+
 /* BROWSER SPECIFIC FIXES */
 /* Vars */
 /* Selection place holder */
@@ -82,3 +93,13 @@ th, td {
   text-shadow: none; }
 
 /* Remove the browser drop shadow when highlighting text in browsers. */
+/* Fix bold issues with Edge12+, Safari 6.2+, and Chrome 18+ */
+b,
+strong {
+  font-weight: bolder; }
+
+textarea {
+  overflow: auto;
+  /* Internet Explorer 11+ */
+  resize: vertical;
+  /* Specify textarea resizability */ }

@@ -1,6 +1,6 @@
 {
   "name": "cirrusreset",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A CSS reset written in SCSS.",
   "main": "index.js",
   "scripts": {
