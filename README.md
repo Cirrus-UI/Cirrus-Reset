@@ -6,7 +6,12 @@ A super lightweight CSS reset written in Sass that fixes cross browser styling i
 **npm**
 
 ```sh
-Coming Soon
+npm install cirrusreset
+```
+
+**CDN**
+```
+https://unpkg.com/cirrusreset@0.0.5/dist/reset.min.css
 ```
 
 or download the source.
