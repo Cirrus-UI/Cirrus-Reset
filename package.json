@@ -19,14 +19,14 @@
   "author": "Stanley Lim",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
+    "gulp": "^4.0.2",
     "gulp-build": "^0.5.3",
     "gulp-cli": "^1.2.2",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^1.8.8",
     "gulp-load-plugins": "^1.5.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.1.0",
     "gulp-size": "^2.1.0"
   }
 }
